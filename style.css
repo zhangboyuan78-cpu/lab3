@@ -18,37 +18,46 @@ main {
 
 h1 {
     font-size: 3rem;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
-h2 {
-    margin-top: 40px;
-    font-size: 2rem;
+.intro {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
 }
 
 .buttons {
-    margin-top: 30px;
+    margin-bottom: 40px;
 }
 
 button {
     margin: 10px;
-    padding: 12px 20px;
+    padding: 12px 22px;
     border: none;
     border-radius: 25px;
     background-color: #333;
     color: white;
-    cursor: pointer;
     font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease;
 }
 
 button:hover {
     transform: scale(1.05);
 }
 
+.story-info {
+    margin-bottom: 35px;
+}
+
+.story-info h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
 .sequence {
     display: flex;
     gap: 25px;
-    margin-top: 40px;
 }
 
 .card {
@@ -58,6 +67,11 @@ button:hover {
     border-radius: 15px;
 }
 
+.card h3 {
+    font-size: 1.3rem;
+    margin-top: 0;
+}
+
 .card img {
     width: 100%;
     height: 350px;
@@ -65,19 +79,27 @@ button:hover {
     border-radius: 12px;
 }
 
-.stage {
-    font-weight: bold;
-    font-size: 1.2rem;
+.card p {
+    margin-top: 15px;
+    line-height: 1.5;
 }
 
 @media (max-width: 750px) {
+
+    main {
+        padding: 40px 20px;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
 
     .sequence {
         flex-direction: column;
     }
 
-    h1 {
-        font-size: 2.2rem;
+    .card img {
+        height: auto;
     }
 
 }
